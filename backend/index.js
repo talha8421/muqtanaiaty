@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 app.get("/users", async (req, res) => {
   const data = await prisma.user.findMany();
-  res.json(data);
+  res.json(data);ss
 });
 
 // Create User Route
